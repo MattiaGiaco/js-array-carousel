@@ -43,6 +43,7 @@
 }
 
 .mg-slider{
+  position: relative;
   display: flex;
   flex-direction: column;
   width: 25%;
@@ -62,4 +63,29 @@
 .mg-slider .mg-item.mg-active{
   border: 1px solid white;
   opacity: 1;
+}
+
+.prev, .next {
+  position: absolute;
+  transform: translateX(-50%);
+  left: 46%;
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin: 10px;
+  background-color: rgba(255, 255, 255, .5);
+  cursor: pointer;
+  text-align: center;
+}
+
+.prev {
+  top: 0;
+}
+.next {
+  bottom: 0;
+}
+
+.prev:hover, .next:hover {
+  background-color: white;
 }
